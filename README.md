@@ -21,9 +21,9 @@ tap_gui:
   service_type: ClusterIP
   app-config:
     app:
-      baseUrl: http://tap-gui.tap.example.com  # DNS Suffix should match 'domain' in values-ingress.yaml
+      baseUrl: http://tap-gui.lab.zoolabs.me  # DNS Suffix should match 'domain' in values-ingress.yaml
 learningcenter:
-  ingressDomain: "tap.example.com"             # Should match 'domain' in values-ingress.yaml
+  ingressDomain: "tap.lab.zoolabs.me"             # Should match 'domain' in values-ingress.yaml
   ingressSecret:
     secretName: tls                            # Should match 'tls.secretName' in values-ingress.yaml
   server:
