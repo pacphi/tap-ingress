@@ -34,7 +34,7 @@ learningcenter:
 
 Once you have completed the Tanzu Application Platform install, and all the packages are showing a state of **Reconcile succeeded**, you are ready to run the script to configure Ingress. From the root directory of this repo, run:
 
-`./configure-ingress.sh values-ingress.yaml`
+`./configure-ingress.sh`
 
 This will apply a **TLSCertificateDelegation**, set up multiple **HttpProxy** resources, and modify your Cloud Native Runtimes install so that deployed workloads will be addressable.
 
