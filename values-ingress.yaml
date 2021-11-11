@@ -1,6 +1,6 @@
 #@data/values
 ---
-domain: tap.example.com
+domain: lab.zoolabs.me
 tls:
-  secretName: tls
-  namespace: tanzu-system-ingress
+  secretName: knative-tls
+  namespace: contour-external
