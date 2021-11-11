@@ -18,6 +18,8 @@ kind: HTTPProxy
 metadata:
   name: tap-gui
   namespace: tap-gui
+  annotations:
+    projectcontour.io/ingress.class: #@ data.values.tls.namespace
 spec:
   virtualhost:
     fqdn: #@ "tap-gui.{}".format(data.values.domain)
@@ -34,6 +36,8 @@ kind: HTTPProxy
 metadata:
   name: app-live-view
   namespace: app-live-view
+  annotations:
+    projectcontour.io/ingress.class: #@ data.values.tls.namespace
 spec:
   virtualhost:
     fqdn: #@ "app-live-view.{}".format(data.values.domain)
@@ -50,6 +54,8 @@ kind: HTTPProxy
 metadata:
   name: accelerator
   namespace: accelerator-system
+  annotations:
+    projectcontour.io/ingress.class: #@ data.values.tls.namespace
 spec:
   virtualhost:
     fqdn: #@ "accelerator.{}".format(data.values.domain)
